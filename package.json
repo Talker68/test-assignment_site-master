@@ -1,8 +1,8 @@
 {
-  "name": "resume-project",
+  "name": "test-assignment",
   "version": "0.1.0",
   "private": true,
-  "description": "responsive resume webpage",
+  "description": "test assignment for Site-master",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.5.3",
