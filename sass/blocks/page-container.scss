@@ -1,6 +1,16 @@
 .page-container {
   box-sizing: border-box;
-  width: 700px;
+  width: 696px;
   margin: 0 auto;
   padding-left: 16px;
+
+  font-size: 0;
+}
+
+@media (max-width: 695px) {
+
+  .page-container {
+    width: 320px;
+  }
+
 }

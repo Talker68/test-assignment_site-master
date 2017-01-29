@@ -48,3 +48,14 @@
       color: #41444b;
     }
 }
+
+@media (max-width: 695px) {
+
+  .page-header {
+    width: 320px;
+  }
+  .page-header__list {
+    width: 100%;
+  }
+
+}
