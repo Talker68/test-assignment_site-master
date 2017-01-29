@@ -1,0 +1,39 @@
+.page-header {
+  box-sizing: border-box;
+  width: 696px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+.page-header__header {
+  width: 100%;
+  margin-bottom: 0;
+
+  font-size: 42px;
+
+  border-bottom: 1px solid $dark-gray;
+}
+
+.page-header__list {
+  width: 620px;
+  margin: 0;
+  padding-left: 14px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+  background-color: $light-gray;
+}
+
+.page-header__list-item {
+  display: inline-block;
+
+  list-style: none;
+}
+
+.page-header__link {
+
+    &:link, &:visited {
+      color: black;
+    }
+}
