@@ -8,20 +8,25 @@
 
 .page-header__header {
   width: 100%;
+  margin-top: 5px;
   margin-bottom: 0;
+  padding-bottom: 5px;
 
-  font-size: 42px;
+  font-size: 50px;
   font-weight: normal;
+  color: #535e62;
 
   border-bottom: 1px solid $dark-gray;
 }
 
 .page-header__list {
-  width: 620px;
+  width: 610px;
   margin: 0;
-  padding-left: 14px;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-left: 12px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+
+  font-size: 14px;
 
   background-color: $light-gray;
 }
@@ -29,12 +34,17 @@
 .page-header__list-item {
   display: inline-block;
 
+  padding-right: 6px;
+  padding-bottom: 5px;
+
   list-style: none;
 }
 
 .page-header__link {
+    color: #41444b;
+    letter-spacing: -0.1px;
 
     &:link, &:visited {
-      color: black;
+      color: #41444b;
     }
 }

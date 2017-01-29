@@ -1,22 +1,116 @@
 .sidebar {
+  position: relative;
+
   float: right;
   box-sizing: border-box;
-  width: 265px;
+  width: 264px;
+  height: 718px;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 16px;
+
+  overflow: hidden;
 
   @include clearfix;
 }
+
 .sidebar__item {
   border-bottom: 1px solid $dark-gray;
+
+  &:first-of-type .sidebar__time {
+    font-weight: bold;
+    color: black;
+  }
 }
+.sidebar__header {
+  margin-top: 2px;
+  margin-bottom: 17px;
+  padding-bottom: 3px;
+
+  font-size: 19px;
+  color: #535e62;
+
+  border-bottom: 1px solid #989898;
+}
+
+.sidebar__category {
+  position: relative;
+  left: -3px;
+
+  display: inline-block;
+  margin-right: 2px;
+  padding: 1px 3px;
+
+  font-size: 11px;
+  color: white;
+  background-color: gray;
+
+  &--blue {
+    background-color: #0089cf;
+  }
+  &--green {
+    background-color: #29982f;
+  }
+  &--red {
+    background-color: #841116;
+  }
+}
+
 .sidebar__description {
+  margin-top: 9px;
   margin-left: 60px;
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  letter-spacing: -0.4px;
 }
+
 .sidebar__time {
+  position: relative;
+  bottom: 6px;
+  left: 6px;
+
   float: left;
 
-  &:first-of-type {
-    font-weight: bold;
-  }
+  font-size: 17px;
+  color: #506060;
+}
+
+.sidebar__navigation {
+  position: absolute;
+  bottom: 0;
+  z-index: 666;
+
+  margin-left: 3px;
+  padding-top: 20px;
+
+  background-color: white;
+  box-shadow: 0 -10px 10px -2px white;
+}
+
+.sidebar__up-button {
+  width: 34px;
+  height: 30px;
+
+  vertical-align: bottom;
+
+  background-color: white;
+  border: 1px solid #cacaca;
+  border-radius: 2px;
+  box-shadow: inset 0px -25px 60px -40px rgba(black, 0.8);
+}
+
+.sidebar__news-button {
+  min-width: 196px;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 15px;
+
+  vertical-align: bottom;
+
+  background-color: white;
+  border: 1px solid #cacaca;
+  border-radius: 2px;
+  box-shadow: inset 0px -25px 60px -40px rgba(black, 0.8);
 }
