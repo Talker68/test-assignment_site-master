@@ -63,7 +63,6 @@
   &--main {
     width: 100%;
     height: auto;
-    // margin-bottom: -60px;
   }
 }
 
@@ -106,7 +105,23 @@
 
   .page-content {
     float: none;
-    width: 320px;
+    width: 100%;
+    padding: 0;
   }
+  .page-content__image {
+    width: 100%;
+  }
+  .page-content__header {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 0;
+
+    &--main {
+      padding-top: 0;
+      padding-left: 10px;
+    }
+  }
+
 
 }

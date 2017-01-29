@@ -53,8 +53,16 @@
 
   .page-header {
     width: 320px;
+    margin-right: 0;
+    padding-right: 10px;
   }
+
+  .page-content__header {
+    width: 100%;
+  }
+
   .page-header__list {
+    box-sizing: border-box;
     width: 100%;
   }
 
