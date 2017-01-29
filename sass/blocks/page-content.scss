@@ -2,3 +2,81 @@
   box-sizing: border-box;
   margin-right: 265px;
 }
+
+.page-content__article {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid $dark-gray;
+
+  &--main {
+    margin-bottom: 10px;
+    padding-bottom: 0;
+  }
+}
+
+.page-content__header {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 10px;
+  width: 236px;
+
+  font-size: 18px;
+  vertical-align: top;
+
+  &--main {
+    width: 100%;
+    margin: 0;
+    padding: 8px 10px;
+
+    color: white;
+
+    background-color: rgba(64, 69, 75, 0.5);
+    border-bottom: 4px solid #787b80;
+  }
+  &--blue {
+    font-size: 18px;
+    color: #165ca2;
+  }
+}
+
+.page-content__image {
+  display: inline-block;
+  width: 180px;
+  height: auto;
+
+  &--main {
+    width: 100%;
+    height: auto;
+    margin-bottom: -62px;
+  }
+}
+
+.page-content__time {
+  display: inline-block;
+  padding-right: 0.5em;
+
+  color: #ad9ba7;
+
+  &--main {
+    color: #fa8d4a;
+  }
+}
+
+.page-content__text {
+  margin: 0;
+
+  font-size: 14px;
+
+  &--main {
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+
+    color: white;
+
+    background-color: rgba(64, 69, 75, 1);
+  }
+}
