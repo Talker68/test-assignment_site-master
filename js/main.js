@@ -1,20 +1,23 @@
+var scrollButton = document.getElementsByClassName("sidebar__up-button")[0];
+var newsButton = document.getElementsByClassName("sidebar__news-button")[0];
+
 window.onload = function() {
 
-  setImageOffset();
+  scrollButton.addEventListener("click", scrollTop, false);
 
 };
 
-//функция устанавливает отрицательный margin для изображения, равный высоте заголовка
-function setImageOffset() {
-  var mainImage = document.getElementsByClassName("page-content__image--main")[0];
-  var mainHeader = document.getElementsByClassName("page-content__header--main")[0];
-  var imageOffset = (mainHeader.clientHeight + 6 < mainImage.height)
-    ? -mainHeader.clientHeight - 6
-    : mainImage.height;
+function scrollTop() {
+  console.log("scroool");
+  var scrollStep = -window.scrollY / 20,
+      scrollInterval = setInterval(function(){
+      if ( window.scrollY != 0 ) {
+          window.scrollBy( 0, scrollStep );
+      }
+      else clearInterval(scrollInterval);
+  },15);
+}
 
-  console.log(mainImage.height);
-  console.log(mainHeader.clientHeight);
-  console.log(-mainHeader.clientHeight + "px");
+function addNews() {
 
-  mainImage.style.marginBottom = imageOffset + "px";
 }
