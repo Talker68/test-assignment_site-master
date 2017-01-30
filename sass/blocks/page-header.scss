@@ -48,3 +48,21 @@
       color: #41444b;
     }
 }
+
+@media (max-width: 695px) {
+
+  .page-header {
+    width: 320px;
+    padding-right: 15px;
+  }
+
+  .page-content__header {
+    width: 100%;
+  }
+
+  .page-header__list {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+}
