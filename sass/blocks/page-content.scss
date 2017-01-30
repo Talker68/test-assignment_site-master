@@ -32,6 +32,10 @@
   line-height: 21px;
   vertical-align: top;
 
+  a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
   &--main {
     position: absolute;
     bottom: 0;
